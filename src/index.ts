@@ -1,1 +1,1 @@
-export { default as objectIterator } from "./object-iterator";
+export { default as objectIterator } from "./lib";

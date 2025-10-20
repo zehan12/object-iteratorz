@@ -7,8 +7,8 @@ export default defineConfig({
     build: {
         lib: {
             entry: resolve(__dirname, 'src/index.ts'),
-            name: 'object-iterator',
-            fileName: 'object-iterator',
+            name: 'lib',
+            fileName: 'lib',
         },
     },
     plugins: [dts()],

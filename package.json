@@ -1,15 +1,15 @@
 {
-  "name": "object-iterator",
+  "name": "object-iteratorz",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "main": "./dist/object-iterator.umd.cjs",
-  "module": "./dist/object-iterator.js",
+  "main": "./dist/lib.umd.cjs",
+  "module": "./dist/lib.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/object-iterator.js",
-      "require": "./dist/object-iterator.umd.cjs"
+      "import": "./dist/lib.js",
+      "require": "./dist/lib.umd.cjs"
     }
   },
   "files": [
