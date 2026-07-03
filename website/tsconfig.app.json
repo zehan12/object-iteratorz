@@ -12,7 +12,8 @@
     /* Aliases */
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "object-iteratorz": ["../src/index.ts"]
     },
 
     /* Bundler mode */
