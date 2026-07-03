@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, NavLink, Outlet, useLocation } from 'react-router-dom';
-import { Menu, X, GitBranch, TerminalSquare } from 'lucide-react';
+import { Menu, X, TerminalSquare } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { ModeToggle } from '@/components/mode-toggle';
 import { cn } from '@/lib/utils';
@@ -64,7 +64,20 @@ export function DocLayout() {
             <nav className="flex items-center space-x-1">
               <a href="https://github.com/zehan12/object-iteratorz" target="_blank" rel="noreferrer">
                 <Button variant="ghost" size="icon">
-                  <GitBranch className="h-4 w-4" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="h-4 w-4"
+                  >
+                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.2c3-.3 6-1.5 6-6.5 0-1.4-.5-2.5-1.5-3.4.1-.3.4-1.6-.1-3.4 0 0-1.2-.4-3.8 1.4a12.8 12.8 0 0 0-7 0C6.2 1.6 5 2 5 2c-.5 1.8-.2 3.1-.1 3.4-1 1-1.5 2-1.5 3.4 0 5 3 6.2 6 6.5-.4.4-.7 1-.8 2-.1.5-.1 1.2-.1 1.7 0 .5-.1 1-.1 1.5" />
+                  </svg>
                 </Button>
               </a>
               <ModeToggle />
