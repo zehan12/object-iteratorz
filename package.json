@@ -1,13 +1,13 @@
 {
   "name": "object-iteratorz",
-  "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "main": "./dist/lib.umd.cjs",
   "module": "./dist/lib.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/lib.js",
       "require": "./dist/lib.umd.cjs"
     }
@@ -18,12 +18,32 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src test",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "docs:dev": "npm run dev --prefix website",
+    "docs:build": "npm run build --prefix website",
+    "docs:preview": "vitepress preview docs",
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@types/node": "^24.8.1",
+    "@typescript-eslint/eslint-plugin": "^8.62.1",
+    "@typescript-eslint/parser": "^8.62.1",
+    "@vitest/coverage-v8": "^4.1.9",
+    "eslint": "^10.6.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.6",
+    "prettier": "^3.9.4",
     "typescript": "~5.9.3",
+    "typescript-eslint": "^8.62.1",
     "vite": "^7.1.7",
-    "vite-plugin-dts": "^4.5.4"
+    "vite-plugin-dts": "^4.5.4",
+    "vitepress": "^1.6.4",
+    "vitest": "^4.1.9",
+    "vue": "^3.5.39"
   }
 }
