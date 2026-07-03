@@ -1,1 +1,3 @@
-export { default as objectIterator } from "./lib";
+export * from "./iterators.js";
+export * from "./transformers.js";
+export * from "./search.js";
