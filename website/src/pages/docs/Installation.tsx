@@ -14,10 +14,10 @@ export function Installation() {
         How to install and set up object-iteratorz in your project.
       </p>
 
-      <div className="bg-amber-100 dark:bg-amber-900/30 border border-amber-200 dark:border-amber-800 rounded-lg p-4 my-6">
-        <h3 className="text-amber-800 dark:text-amber-300 font-medium m-0 mb-2">Note on naming</h3>
+      <div className="not-prose bg-amber-100 dark:bg-amber-900/30 border border-amber-200 dark:border-amber-800 rounded-lg p-4 my-6">
+        <h3 className="text-amber-800 dark:text-amber-300 font-medium text-lg m-0 mb-2">Note on naming</h3>
         <p className="text-amber-700 dark:text-amber-400 m-0 text-sm">
-          The name <code>object-iterator</code> was already taken on npm, so the package is published as <strong><code>object-iteratorz</code></strong>.
+          The name <code className="bg-amber-200/50 dark:bg-amber-950/50 px-1 py-0.5 rounded font-mono">object-iterator</code> was already taken on npm, so the package is published as <strong><code className="bg-amber-200/50 dark:bg-amber-950/50 px-1 py-0.5 rounded font-mono">object-iteratorz</code></strong>.
         </p>
       </div>
 
