@@ -4,7 +4,7 @@ import { CodeBlock } from '@/components/ui/CodeBlock';
 
 export function Installation() {
   return (
-    <div className="prose prose-zinc dark:prose-invert max-w-none">
+    <div className="prose max-w-none">
       <Helmet>
         <title>Installation - object-iteratorz</title>
       </Helmet>

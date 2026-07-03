@@ -43,7 +43,7 @@ export function Benchmark() {
   };
 
   return (
-    <div className="prose prose-zinc dark:prose-invert max-w-none">
+    <div className="prose max-w-none">
       <Helmet>
         <title>Benchmark - object-iteratorz</title>
       </Helmet>

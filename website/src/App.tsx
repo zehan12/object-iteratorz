@@ -17,7 +17,7 @@ export default function App() {
         <Route path="/benchmark" element={<Benchmark />} />
         {/* Placeholder for other doc pages */}
         <Route path="/docs/:slug" element={
-          <div className="prose prose-zinc dark:prose-invert">
+          <div className="prose max-w-none">
             <h1>Coming Soon</h1>
             <p>This documentation page is currently being updated.</p>
           </div>
