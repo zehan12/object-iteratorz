@@ -32,7 +32,7 @@ export function Benchmark() {
       start = performance.now();
       count = 0;
       for (let i = 0; i < 100000; i++) {
-        const res = filterObject(data, (v) => v !== null);
+        const res = filterObject(data, (v: unknown) => v !== null);
       }
       end = performance.now();
       newResults.push({ name: 'filterObject', ops: 100000, time: end - start });
